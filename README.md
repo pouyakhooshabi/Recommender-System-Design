@@ -10,26 +10,26 @@
 
 There are two main approaches for the recommendation system which we plan to design.
 
-### 2.1 Content-based approach
+### 2.1 Collaborative filtering
 
 Content-based filtering uses item features to recommend other items similar to what the user likes, based on their previous actions (e.g., visiting a website) or explicit feedback (e.g., rating).
-In this scenario, we have to build a separate profile for users and for the restaurants and define a metric to measure the distances between the two restaurants. For example, we can use the cosine distance between the vectors of the item and the user to determine its preference. The item profile for restaurants may include city, state, category, etc, while the user profile will be the weighted average of the rated item profile.
+In this scenario, we have to build a separate profile for users and for the restaurants and define a metric to measure the distances between the two restaurants. To set a baseline, we will use the cosine distance between the vectors of the item and the user to determine its preference. The item profile for restaurants may include city, state, category, attributes, etc, while the user profile will be the weighted average of the rated item profile.
 
 
 
-### 2.2 Collaborative filtering (CF)
 
-CF uses similarities between users and items simultaneously to provide recommendations. This allows recommending an item to user A based on the interests of a similar user B. In order to find these similarities, we can use some well-known approaches such as Jaccard Similarity, Cosine Similarity, and Pearson Correlation Coefficient.
-Furthermore, to achieve better results,  we can also leverage hybrid methods which combine Content-Based Filtering and CF.
+### 2.2 Content-based approach
+
+CF uses similarities between users and items simultaneously to provide recommendations. This allows recommending an item to user A based on the interests of a similar user B. In order to find these similarities, we can use some well-known approaches such as Jaccard Similarity, Cosine Similarity, and Pearson Correlation Coefficient. We will also use the Nearest Neighbourhood algorithm for CF. 
 
 
 
 ## 3. Dataset and features
 
 In this project, we will use Yelp’s dataset, more specifically the restaurant category. The dataset is composed of three JSON files:
-1. business.json contains 160,585 businesses including location, attributes, and categories.
-2. review.json contains 8,635,403 review text,  user’s id, restaurant’s id, and the restaurant rate (1-5).
-3. user.json contains data about 2,189,457 users, such as popularity, friends, and names.
+1. business.json contains 160,585 businesses records. It includes the business’s name, address, city, state, category, attributes, etc.
+2. review.json contains 8,635,403 review records. It includes the review’s text,  user’s id, restaurant’s id, the restaurant rate (1-5), etc.
+3. user.json contains data about 2,189,457 users records. It includes the user’s name, review count, friends, average stars, etc.
 
 
 ## 4. Metrics to evaluate model
