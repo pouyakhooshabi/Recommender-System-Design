@@ -10,7 +10,7 @@
 
 There are two main approaches for the recommendation system which we plan to design.
 
-### 2.1 Collaborative filtering
+### 2.1 Content-based approach
 
 Content-based filtering uses item features to recommend other items similar to what the user likes, based on their previous actions (e.g., visiting a website) or explicit feedback (e.g., rating).
 In this scenario, we have to build a separate profile for users and for the restaurants and define a metric to measure the distances between the two restaurants. To set a baseline, we will use the cosine distance between the vectors of the item and the user to determine its preference. The item profile for restaurants may include city, state, category, attributes, etc, while the user profile will be the weighted average of the rated item profile.
@@ -18,7 +18,7 @@ In this scenario, we have to build a separate profile for users and for the rest
 
 
 
-### 2.2 Content-based approach
+### 2.2 Collaborative filtering (CF)
 
 CF uses similarities between users and items simultaneously to provide recommendations. This allows recommending an item to user A based on the interests of a similar user B. In order to find these similarities, we can use some well-known approaches such as Jaccard Similarity, Cosine Similarity, and Pearson Correlation Coefficient. We will also use the Nearest Neighbourhood algorithm for CF. 
 
