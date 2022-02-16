@@ -34,5 +34,5 @@ In this project, we will use Yelp’s dataset, more specifically the restaurant 
 
 ## 4. Metrics to evaluate model
 
-We will use Root Mean Square Error (RMSE) and Mean Average Error (MAE), which are popular measures to evaluate regression problems.
+We will use Root Mean Square Error (RMSE) and Mean Absolute Error (MAE), which are popular measures to evaluate regression problems.
 </div>
