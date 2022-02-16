@@ -20,7 +20,7 @@ In this scenario, we have to build a separate profile for users and for the rest
 
 ### 2.2 Collaborative filtering (CF)
 
-CF uses similarities between users and items simultaneously to provide recommendations. It works by searching a large group of people and finding a smaller set of users with tastes similar to a particular user. This allows recommending an item to user A based on the interests of similar users. In order to find these similarities, we can use some well-known approaches such as Jaccard Similarity, Cosine Similarity, and Pearson Correlation Coefficient. We will also use the Nearest Neighbourhood algorithm for CF. 
+CF uses similarities between users and items simultaneously to provide recommendations. It works by searching a large group of people and finding a smaller set of users with tastes similar to a particular user. This allows recommending an item to user A based on the interests of similar users. In order to find these similarities, we can use some well-known approaches such as Jaccard Similarity, Cosine Similarity, and Pearson Correlation Coefficient. We will also use the k-Nearest Neighbourhood algorithm for user-user CF. 
 
 
 
