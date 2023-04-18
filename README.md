@@ -1,6 +1,5 @@
 # Project Summary
 
-- Team 13
 
 ## 1. Motivation and problem definition
 
